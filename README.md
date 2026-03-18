@@ -1,7 +1,6 @@
-# wgups-routing-program
+# WGUPS Routing Program
 WGUPS Routing Program (C950 - Data Structures &amp; Algorithms II)
 
-# WGUPS Routing Program
 
 This project implements a delivery routing system using:
 
