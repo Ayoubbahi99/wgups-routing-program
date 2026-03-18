@@ -1,6 +1,5 @@
-# Ayoub El bahi
 # Student ID: 012114667
-# truck.py
+# Ayoub El bahi
 # Truck class — keeps track of where the truck is, how far it's gone, etc.
 
 class Truck:

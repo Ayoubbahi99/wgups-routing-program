@@ -1,5 +1,6 @@
-# Ayoub El bahi
 # Student ID: 012114667
+# Ayoub El bahi
+
 # Nearest neighbor delivery algorithm.
 # The idea is simple: from wherever the truck is, go to the closest
 # undelivered package next. Repeat until the truck is empty, then go home.

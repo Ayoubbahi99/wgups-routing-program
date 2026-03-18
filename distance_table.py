@@ -1,5 +1,5 @@
-# Ayoub El bahi
 # Student ID: 012114667
+# Ayoub El bahi
 # Reads the distance CSV and lets me look up miles between any two addresses.
 # The address list below has to match the row/column order in distanceCSV.csv exactly.
 
@@ -52,6 +52,12 @@ class DistanceTable:
         return None
 
     def get_distance(self, index1, index2):
+        # if either address wasn't found in ADDRESS_LIST show an error
+        if index1 is None or index2 is None:
+            raise ValueError(
+                f"Address not found in ADDRESS_LIST (index1={index1}, index2={index2})"
+            )
+ 
         # the CSV is lower-triangular so some cells are empty
         # this works because distances are the same in both directions
         d = self.distances[index1][index2]

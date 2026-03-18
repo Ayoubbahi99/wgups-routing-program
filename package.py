@@ -1,5 +1,5 @@
-# Ayoub El bahi
 # Student ID: 012114667
+# Ayoub El bahi
 # Holds all the info for a single delivery package.
 import datetime
 
@@ -31,11 +31,12 @@ class Package:
         else:
             self.status = "Delivered"
 
-        # package 9 has a wrong address until 10:20 AM
+    def get_display_address(self, current_time):
+        # package 9 has a wrong address on file until 10:20 AM
+        # return the correct address for the given time without mutating self.street
         if self.ID == 9:
-            if current_time > datetime.timedelta(hours=10, minutes=20):
-                self.street = "410 S State St"
-                self.zip    = "84111"
+            if current_time >= datetime.timedelta(hours=10, minutes=20):
+                return "410 S State St", "84111"
             else:
-                self.street = "300 State St"
-                self.zip    = "84103"
+                return "300 State St", "84103"
+        return self.street, self.zip

@@ -1,5 +1,5 @@
-# Ayoub El bahi
 # Student ID: 012114667
+# Ayoub El bahi
 # Custom hash table using chaining to handle collisions.
 # I built this without any extra libraries, just plain Python lists.
 
@@ -32,4 +32,4 @@ class ChainingHashTable:
             if pair[0] == key:
                 return pair[1]
 
-        return None
+        return None 
